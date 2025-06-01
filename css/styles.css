@@ -95,3 +95,18 @@ section p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
+.main-motion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.section-motion img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
