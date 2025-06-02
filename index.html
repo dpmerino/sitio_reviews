@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <title>Sitio Web Reseñas</title>
 </head>
 
@@ -15,6 +18,7 @@
             de mejor manera</p>
         <nav>
             <ul>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="libros.html">Libros</a></li>
                 <li><a href="peliculas.html">Películas</a></li>
                 <li><a href="musica.html">Música</a></li>
@@ -24,34 +28,67 @@
     </header>
     <main>
         <section>
-            <div>
+            <a href="libros.html" class="card-link">
                 <img src="img/libro.jpg" alt="Libros">
                 <h3>Reseñas de libros</h3>
-                <p>Opinion sobre algún libro que leí ultimamenta</p>
-            </div>
+                <p>Opinion sobre algún libro que leí ultimamente o alguno que me leí</p>
+            </a>
         </section>
         <section>
-            <div>
+            <a href="peliculas.html" class="card-link">
                 <img src="img/claqueta.avif" alt="Claqueta">
                 <h3>Reseñas de peliculas</h3>
-                <p>Opinion sobre alguna película que he visto ultimamenta</p>
-            </div>
-        </section>
-         <section>
-            <div>
-                <img src="img/vinilo.jpg" alt="Disco de vinilo">
-                <h3>Reseñas sobre música</h3>
-                <p>Opinion sobre algún disco</p>
-            </div>
+                <p>Opinion sobre alguna película que he visto ultimamente o mis favoritas sin spoilers</p>
+            </a>
         </section>
         <section>
-            <div>
+            <a href="musica.html" class="card-link">
+                <img src="img/vinilo.jpg" alt="Disco de vinilo">
+                <h3>Reseñas sobre música</h3>
+                <p>Opinion sobre algún disco de mis artistas favoritos</p>
+            </a>
+        </section>
+        <section>
+            <a href="videojuegos.html" class="card-link">
                 <img src="img/astro-bot.webp" alt="Personaje de videojuego">
                 <h3>Reseñas sobre videojuegos</h3>
-                <p>Opinion sobre algún juego</p>
-            </div>
+                <p>Opinion sobre algún juego que me gustó o lo esté jugando</p>
+            </a>
         </section>
     </main>
+    </main>
+    <section class="formulario-contacto">
+        <h2>Sugerencias</h2>
+        <p>¿Tienes algún libro, película, disco o videojuego que debería revisar? Acepto sugerencias</p>
+        <form action="#" method="post">
+            <ul style="list-style: none; padding: 0; margin: 1;">
+                <li>
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </li>
+                <li>
+                    <label for="email">Tu correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                <li>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="libro">Libro</option>
+                        <option value="pelicula">Película</option>
+                        <option value="musica">Música</option>
+                        <option value="videojuego">Videojuego</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="sugerencia">Tu sugerencia:</label>
+                    <textarea id="sugerencia" name="sugerencia" rows="5" required></textarea>
+                </li>
+                <li>
+                    <button type="submit">Enviar</button>
+                </li>
+            </ul>
+        </form>
+    </section>
 </body>
 
 </html>
